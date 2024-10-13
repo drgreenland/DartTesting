@@ -120,14 +120,15 @@ class ScoreBoardWindow(QMainWindow):
                     r.adjust_for_ambient_noise(source)
                     audio = r.listen(source)
                     command = r.recognize_google(audio).lower()
+                    print(f'I heard {command}')
 
-                    if "hit twenty" in command:
+                    if "hit 20" in command:
                         print("Voice Command: Hit Twenty")
                         self.record_score(0)  # Assuming index for "Hit 20"
-                    elif "hit nineteen" in command:
+                    elif "hit 19" in command:
                         print("Voice Command: Hit Nineteen")
                         self.record_score(1)  # Assuming index for "Hit 19"
-                    elif "hit bull" in command:
+                    elif "bullseye" in command:
                         print("Voice Command: Hit Bull")
                         self.record_score(4)  # Assuming index for "Hit Bull"
 
