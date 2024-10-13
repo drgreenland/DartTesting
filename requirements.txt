@@ -1,0 +1,18 @@
+
+# Virtual Environment in VS Code
+# python3 -m venv virt
+# pwd to get the current working directory, look for the virt
+# source virt/bin/activate
+# Call this from the terminal to ensure all the packages are 
+# the same when installed on other computers
+# pip3 install -r requirements.txt
+
+
+PyQt5==5.15.7
+screeninfo==0.8.1
+Pillow==9.4.0
+pyinstaller-hooks-contrib==2022.14
+
+# Only needed by developer
+# pyinstaller==5.9.0
+# pyinstaller-hooks-contrib==2022.15
